@@ -1,4 +1,4 @@
-package Les13;
+package Les13_MultiDim_Arrays;
 
 public class Multidemen_Array {
     public static void main(String[] args) {
