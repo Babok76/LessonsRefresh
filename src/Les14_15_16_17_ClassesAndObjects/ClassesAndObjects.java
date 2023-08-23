@@ -1,25 +1,27 @@
-package Les14_15_16_ClassesAndObjects;
+package Les14_15_16_17_ClassesAndObjects;
 
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Person person1 = new Person();
-        person1.name = "Рома";
-        person1.age = 50;
+        //person1.name = "Рома";
+        //person1.age = 50;
         //System.out.println("Меня зовут "+ person1.name+ " и мне "+ person1.age);
+        person1.setNameAge("boba",55);
         person1.speak();
 
         Person person2 = new Person();
-        person2.name = "Вова";
-        person2.age = 20;
+        //person2.name = "Вова";
+        //person2.age = 20;
         //System.out.println("Меня зовут "+ person2.name+ " и мне "+ person2.age);
+        String s1 = "Питер Пэн";
+        person2.setNameAge(s1,22);
+
         person2.speak();
         person2.sayHello();
         //person2.calculateAge();
 
         int persYear1 = person1.calculateAge();
-        System.out.println(persYear1);
-
-
+        System.out.println("Мне до пенсии "+persYear1);
     }
 
 }
@@ -31,12 +33,21 @@ class Person {
     String name;
     int age;
 
+    void setNameAge(String username, int userage){
+      name=username;
+        age=userage;
+    }
+
+/*    void setAge (int userage){
+        age=userage;
+    }*/
+
     int calculateAge() {
        int oldYears =60-age;
         //System.out.println(oldYears);
         return oldYears;
 }
-    void speak() {
+    void speak() { //метод - void = "Пустота", "Ничто"
         for (int i=0; i<3; i++){
         System.out.println("Меня зовут "+ name+ " и мне "+ age);}
     }
