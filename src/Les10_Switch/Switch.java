@@ -1,4 +1,4 @@
-package Les10;
+package Les10_Switch;
 
 import java.util.Scanner;
 

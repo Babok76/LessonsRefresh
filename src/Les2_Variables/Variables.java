@@ -1,4 +1,4 @@
-package Les2;
+package Les2_Variables;
 
 public class Variables {
     public static void main(String[] args) {

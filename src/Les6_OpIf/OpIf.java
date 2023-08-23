@@ -1,4 +1,4 @@
-package Les6;
+package Les6_OpIf;
 
 public class OpIf {
     public static void main(String[] args) {

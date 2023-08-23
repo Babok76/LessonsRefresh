@@ -1,4 +1,4 @@
-package Les14;
+package Les14_ClassesAndObjects;
 
 public class ClassesAndObjects {
 }

@@ -1,4 +1,4 @@
-package Les8;
+package Les8_DoWhile;
 
 import java.util.Scanner;
 

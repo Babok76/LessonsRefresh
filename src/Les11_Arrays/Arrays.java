@@ -1,4 +1,4 @@
-package Les11;
+package Les11_Arrays;
 
 public class Arrays {
     public static void main(String[] args) {

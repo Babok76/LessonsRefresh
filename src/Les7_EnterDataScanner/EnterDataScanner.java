@@ -1,4 +1,4 @@
-package Les7;
+package Les7_EnterDataScanner;
 
 import java.util.Scanner;
 

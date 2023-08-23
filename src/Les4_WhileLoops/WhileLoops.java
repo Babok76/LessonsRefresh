@@ -1,4 +1,4 @@
-package Les4;
+package Les4_WhileLoops;
 
 public class WhileLoops {
     public static void main(String[] args) {

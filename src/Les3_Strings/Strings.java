@@ -1,4 +1,4 @@
-package Les3;
+package Les3_Strings;
 
 public class Strings {
     public static void main(String[] args) {

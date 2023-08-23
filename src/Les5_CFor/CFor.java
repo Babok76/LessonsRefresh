@@ -1,4 +1,4 @@
-package Les5;
+package Les5_CFor;
 
 public class CFor {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Les12;
+package Les12_Arrays_of_Strings;
 
 public class Arrays_of_Strings {
     public static void main(String[] args) {
