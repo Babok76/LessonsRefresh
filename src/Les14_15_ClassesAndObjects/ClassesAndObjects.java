@@ -33,6 +33,6 @@ class Person {
     }
 
     void sayHello () {
-        System.out.println("Привет");
+        //System.out.println("Привет");
     }
 }
