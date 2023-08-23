@@ -24,13 +24,13 @@ class Human {
     private String name;
     private int age;
 
-    public Human() { //Конструктор
+    public Human() { //Конструктор1
         System.out.println("данные из 1-ого конструктора");
         this.name = "Имя по умолчанию";
         this.age = 0;
     }
 
-    public Human(String name, int age) { //Конструктор
+    public Human(String name, int age) { //Конструктор2
         System.out.println("данные из 2-ого конструктора");
         this.name = name;
         this.age = age;
