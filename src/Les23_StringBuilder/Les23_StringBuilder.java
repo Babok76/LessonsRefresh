@@ -21,5 +21,11 @@ public class Les23_StringBuilder {
         //sb.append("friend");
         sb.append(" my ").append("friend");
         System.out.println(sb.toString());
+
+        System.out.printf("This is a string, %s \n", "NICE");
+        System.out.printf("This is a string, %-10d\n", 5);
+        System.out.printf("%.2f Thii%ss, %-10d\n", 10.4, " ttt ", 10);
+        System.out.printf("This is a string, %10d\n", 345);
+        //%-[10][.2]
     }
 }
