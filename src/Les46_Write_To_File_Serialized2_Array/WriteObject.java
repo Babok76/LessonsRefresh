@@ -13,6 +13,7 @@ public class WriteObject {
         try {
             FileOutputStream fos = new FileOutputStream("people2.bin"); // создает поток данных байтов
             ObjectOutputStream obs = new ObjectOutputStream(fos); // записывает объекты-байты в файл
+
             ////////1-ый способ записи
 /*            obs.writeInt(people.length); //пишем в файл число элементов в массиве
 
