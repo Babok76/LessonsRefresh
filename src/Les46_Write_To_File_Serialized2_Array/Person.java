@@ -1,4 +1,4 @@
-package Les46_Write_To_File_Serialized2;
+package Les46_Write_To_File_Serialized2_Array;
 
 import java.io.Serializable;
 

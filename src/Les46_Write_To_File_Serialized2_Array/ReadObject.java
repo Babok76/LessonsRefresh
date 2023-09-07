@@ -1,4 +1,6 @@
-package Les46_Write_To_File_Serialized2;
+package Les46_Write_To_File_Serialized2_Array;
+
+import java.util.Arrays;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,13 +12,17 @@ public class ReadObject {
         try {
             FileInputStream fis = new FileInputStream("people2.bin");
             ObjectInputStream ois = new ObjectInputStream(fis);
+/////1-ый способ чтения
+/*            int personCount = ois.readInt(); //считываем кол-во элементов в массиве
+            Person[] people = new Person [personCount];
 
-            Person pers1 = (Person) ois.readObject();
-            Person pers2 = (Person) ois.readObject();
+            for (int i=0; i< personCount; i++){
+                people[i] = (Person) ois.readObject();
+            }*/
+//////2-ой способ чтения
+            Person[] people = (Person[]) ois.readObject();
 
-            System.out.println(pers1);
-            System.out.println(pers2);
-
+            System.out.println(Arrays.toString(people));
             ois.close();
 
         } catch (IOException e) {
