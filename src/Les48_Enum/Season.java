@@ -1,5 +1,13 @@
 package Les48_Enum;
 
 public enum Season {
-    WINTER, SUMMER, AUTUMN, SPRING
+    WINTER(-35), SUMMER(35), AUTUMN(5), SPRING(10);
+    private int temp;
+
+    Season(int temp) {
+        this.temp = temp;
+    }
+    public int getTemp () {
+        return temp;
+    }
 }
