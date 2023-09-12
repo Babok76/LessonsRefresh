@@ -1,11 +1,6 @@
-import Les27_Package.Something.Someclass;
-import Les27_Package.Squirell;
-import Les27_Package.Tree;
-import java.util.Scanner;
-import Les27_Package.*;
-import java.util.*;
-
-
+import Java_Beginner.Les27_Package.Something.Someclass;
+import Java_Beginner.Les27_Package.Squirell;
+import Java_Beginner.Les27_Package.Tree;
 import java.util.Scanner;
 
 public class Les27_Test {
