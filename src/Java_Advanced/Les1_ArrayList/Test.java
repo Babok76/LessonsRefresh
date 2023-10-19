@@ -14,12 +14,14 @@ public class Test {
 
 
         ArrayList<Integer> list = new ArrayList<>();
-        List<Integer> arr = new ArrayList<>(); // в соотвествии с конвенцией, надо ссылать класс на интерфейс (List)
+        List<Integer> arr = new ArrayList<>(); // в соотвествии с конвенцией, надо ссылать класс на интерфейс (List),
+        // те. лучше так объ€вл€ть
 
         for (int i = 0; i < 10; i++) {
             list.add(i);       //добавить элемент в массив
         }
-        list.remove(5); // удаление элмента из массива. Ётот метод remove очень не эффективен - все элементы перенос€тс€ влево на единицу
+        list.remove(5); // удаление элмента из массива. Ётот метод remove очень не эффективен -
+        // все элементы перенос€тс€ влево на единицу
         System.out.println(list);
 
         System.out.println(list.get(0));  //получить элемент массива
@@ -38,7 +40,8 @@ public class Test {
             System.out.println(x);
         }
 
-// проводим много удалений из нашего листа
+// проводим много удалений из нашего листа нужно использовать LinkedList
         arr = new LinkedList<>();
+
     }
 }
