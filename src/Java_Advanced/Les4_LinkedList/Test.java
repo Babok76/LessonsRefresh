@@ -12,6 +12,7 @@ public class Test {
         my1.add(10);
 
         System.out.println(my1);
+        System.out.println(my1.get(1));
 
     }
 }
