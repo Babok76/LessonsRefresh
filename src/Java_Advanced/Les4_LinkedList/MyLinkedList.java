@@ -50,7 +50,7 @@ public class MyLinkedList { //односвязанный и не параметризованный
         int currentIndex =0;
         Node temp = head;
         while (temp != null) {
-            if (currentIndex+1 == index){ //удаляем предыдущую ссылку
+            if (currentIndex+1 == index){ //удаляем предыдущую ссылку или так: if (currentIndex == index-1)
                 temp.setNext(temp.getNext().getNext()); //удаление происходит за счет перензначения ссылки
                 size --;
                 return;
