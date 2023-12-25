@@ -40,6 +40,30 @@ public class MyLinkedList { //односвязанный и не параметризованный
 
     }
 
+    public void remove (int index){
+        if (index ==0) {
+            head = head.getNext();
+            size--;
+            return;
+        }
+
+        int currentIndex =0;
+        Node temp = head;
+        while (temp != null) {
+            if (currentIndex+1 == index){ //удаляем предыдущую ссылку
+                temp.setNext(temp.getNext().getNext()); //удаление происходит за счет перензначения ссылки
+                size --;
+                return;
+            } else {
+
+                temp = temp.getNext();
+                currentIndex++;
+            }
+
+        }
+
+    }
+
     public String toString (){
         int[] result = new int[size];
         int idx = 0;

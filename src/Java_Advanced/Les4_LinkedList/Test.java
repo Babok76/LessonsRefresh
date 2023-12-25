@@ -11,8 +11,12 @@ public class Test {
         my1.add(2);
         my1.add(10);
 
+
         System.out.println(my1);
         System.out.println(my1.get(1));
 
+        my1.remove(0);
+
+        System.out.println(my1);
     }
 }
