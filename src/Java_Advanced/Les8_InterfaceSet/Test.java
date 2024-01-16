@@ -19,10 +19,11 @@ public class Test {
         hashSet.add("Limba");
         hashSet.add("Limba");
 
-        System.out.println(hashSet.contains("Bob"));
+        System.out.println(hashSet.contains("Bob")); // в set этот метод работает очень быстро, потому что используется хеширование
         System.out.println(hashSet.contains("Bobi"));
         System.out.println();
         System.out.println(hashSet.isEmpty());
+        System.out.println(hashSet);
 
 
 /*        for (String name : hashSet) {
@@ -52,7 +53,7 @@ public class Test {
         hSI2.add(8);
 
         Set<Integer> union = new HashSet<>(hassSetIndex);
-        union.addAll(hSI2);
+        union.addAll(hSI2); //объединение множеств
 
         System.out.println(union);
 
