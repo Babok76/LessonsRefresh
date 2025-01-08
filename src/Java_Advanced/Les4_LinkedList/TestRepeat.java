@@ -2,10 +2,11 @@ package Java_Advanced.Les4_LinkedList;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class TestRepeat {
     public static void main(String[] args) {
-        //List<Integer> myNewLinked = new LinkedList<>();
+        List<Integer> myNewLinked = new LinkedList<>();
         MyLinledListRepeat mlr = new MyLinledListRepeat();
         mlr.add(1);
         mlr.add(2);
