@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
-        Map <Integer, String> map = new HashMap<>();
+        Map <Integer, String> map = new HashMap<>();  // Если Не важен порядок ключ-значений, то используется HashMap
         map.put(1,"Один");
         map.put(2, "Два");
         map.put(3,"Три");
