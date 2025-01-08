@@ -1,6 +1,7 @@
 package Java_Advanced.Les1_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -36,9 +37,11 @@ public class Test {
             System.out.println(list.get(i));
         }
         System.out.println("");
-        for (Integer x : list) { // вывод массива в столбец
+        for (Integer x : list) { // вывод массива в столбец // для каждого элемента x массива list выводим на экран
             System.out.println(x);
         }
+
+        list.add(5,9);
 
 // проводим много удалений из нашего листа нужно использовать LinkedList
         arr = new LinkedList<>();

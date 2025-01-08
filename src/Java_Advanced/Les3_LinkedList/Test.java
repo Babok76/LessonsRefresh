@@ -23,7 +23,7 @@ public class Test {
         // удаление элементов или добавление в начало листа - быстрее для  LinkedList
 
         measureTimeAdd1(arrayList);
-        measureTimeAdd2(linkedList);
+        measureTimeAdd1(linkedList);
 
     }
 
@@ -32,12 +32,12 @@ public class Test {
             list.add(i); //значения добавляются в конец массива
         }*/
         long start = System.currentTimeMillis(); // возвращает текущее время в милисекундах
+
+        for (int i =0; i<1000000; i++){
+            list.add(0,i); //значения добавляются в позицию 0
 /*        for (int i = 0; i < 100000; i++) {
             list.get(i);
         }*/
-        for (int i =0; i<100000; i++){
-            list.add(0,i); //значения добавляются в позицию 0
-
         }
         long end = System.currentTimeMillis();
 
@@ -52,7 +52,7 @@ public class Test {
 /*        for (int i = 0; i < 100000; i++) {
             list.get(i);
         }*/
-        for (int i =0; i<100000; i++){
+        for (int i =0; i<1000000; i++){
             list.add(i);
 
         }
