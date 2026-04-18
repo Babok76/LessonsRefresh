@@ -1,6 +1,7 @@
 package Java_Advanced.Les1_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class Test {
             list.add(i);       //добавить элемент в массив
         }
         list.remove(5); // удаление элмента из массива. Этот метод remove очень не эффективен -
-        // все элементы переносятся влево на единицу
+        // все элементы переносятся влево на единицу, лучше использовать linkedList
         System.out.println(list);
 
         System.out.println(list.get(0));  //получить элемент массива
@@ -32,13 +33,15 @@ public class Test {
         System.out.println(list.size());  //получить размер массива
         System.out.println("");
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) { // вывод массива в столбец
             System.out.println(list.get(i));
         }
         System.out.println("");
-        for (Integer x : list) {
+        for (Integer x : list) { // вывод массива в столбец // для каждого элемента x массива list выводим на экран
             System.out.println(x);
         }
+
+        list.add(5,9);
 
 // проводим много удалений из нашего листа нужно использовать LinkedList
         arr = new LinkedList<>();
